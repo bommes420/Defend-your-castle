@@ -105,9 +105,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc459bcc604a6146b1e33d0cda5f4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wall: {fileID: 0}
+  wallHP: 100
   Tijd: 0
-  speed: 3
+  speed: 4
   DamageHealth: 50
+  DamageDelay: 1
   Health: 100
   HealthShow: 0
 --- !u!1 &6443855430050153437

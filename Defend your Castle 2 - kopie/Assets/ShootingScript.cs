@@ -9,6 +9,7 @@ public class ShootingScript : MonoBehaviour
     
     void Start()
     {
+        //Making sure the camera exists
         cam = GetComponent<Camera>();
     }
 
@@ -23,7 +24,7 @@ public class ShootingScript : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                // hit.collider.gameObject.GetComponent<Movescript>().Health = hit.collider.gameObject.GetComponent<Movescript>().Health - 25;
+               //get the gameobject's hitcollider, then get the movescript component where we call the function DoDamage
                 hit.collider.gameObject.GetComponent<Movescript>().DoDamage();
             }
         }
